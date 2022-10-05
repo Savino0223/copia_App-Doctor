@@ -33,25 +33,17 @@
     padding: 1.5rem !important; }
 
 
-  @media print {
-    .navbar {
-      display: none; }
-
-    .table .thead-dark th {
-      color: inherit;
-      border-color: #dee2e6; } }
 
 
-
-      body{
-        background-image: url(background.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-      }
+body{
+  background-image: url(background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  min-height: 120vh;
+}
 
 
 
@@ -71,12 +63,13 @@
 #sidebar {
     min-width: 250px;
     max-width: 250px;
+    height: 100%;
     background: #212121;
     color: #fff;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
-    position: relative;
+    position: fixed;
 }
 
 #sidebar .h6 {
@@ -180,17 +173,20 @@
       display: none; } }
 
   #content {
-    width: 100%;
+    width: calc(100% -250px) !important;
     padding: 0;
     min-height: 100vh;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+    right: 0;
+    position: absolute;
   }
 
+
 form{
-  margin-left: 80px;
-  margin-right: 80px;
+  margin-left: 50px;
+  margin-right: 50px;
   background-color: #00000071;
   padding: 20px;
   border-radius: 10px;
@@ -234,15 +230,7 @@ textarea::placeholder {
   display: flex;
 }
 
-body{
-  background-image: url(background.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-}
+
 
 .dica-senha{
   color:rgb(252, 214, 0) !important;
